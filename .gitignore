@@ -1,0 +1,51 @@
+cat <<EOF > .gitignore
+# --- Go build artifacts ---
+myapp
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+bin/
+pkg/
+
+# --- Logs ---
+*.log
+
+# --- AWS Keys ---
+*.pem
+*.key
+
+# --- Python cache ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# --- Docker ---
+*.tar
+.dockerignore
+
+# --- Terraform ---
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
+
+# --- Editor-specific ---
+.vscode/
+.idea/
+*.swp
+EOF
