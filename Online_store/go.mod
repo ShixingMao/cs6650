@@ -1,4 +1,4 @@
-module cs6650
+module online_store
 
 go 1.25.1
 
